@@ -232,6 +232,32 @@ body {
     margin: 0 30px;
 }
 
+/* footer */
+
+footer {
+    height: 150px;
+    background-color: #3a3a3a;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+    margin-right: 75px;
+}
+
+.social-networks i {
+    font-size: 200%;
+    margin: 1%;
+    padding: 1%;
+    color: #fff;
+}
+
+.social-networks i:hover {
+    color: rgb(250, 200, 5);
+}
 
 /* hamburger button media query */
 
