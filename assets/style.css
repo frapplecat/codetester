@@ -133,6 +133,7 @@ body {
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
+
 @keyframes moon-zoom {
     from {
         transform: scale(1);
@@ -144,20 +145,23 @@ body {
 }
 
 .homepage-moon-circle {
-    font-size: 250%;
+    font-size: 300%;
     font-family: 'Roboto', sans-serif;
     color: #3a3a3a;
     text-transform: uppercase;
+    padding: 15px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    display: inline-flex;
-    width: 450px;
-    height: 450px;
+    display: flex;
+    width: 550px;
+    height: 550px;
     border-radius: 50%;
     background-color: rgb(250, 200, 5, .7);
-    top: 225px;
-    right: 150px;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
     position: absolute;
 }
 
@@ -165,65 +169,69 @@ body {
     color: #3a3a3a;
     text-decoration: none;
     font-size: 50%;
-
-    
 }
 
 .homepage-moon-circle>h1>a:hover {
     color: #fff;
 }
 
-
-/* about us section */
-
-.about-us {
-    height: 650px;
+/* about us wrapper */
+.wrapper {
+    padding: 30px 30px 100px;
     width: 100%;
     background-color: rgb(250, 200, 5);
+    font-size: 'Roboto', san-serif;
+    text-align: center;
+}
+.wrapper>h1 {
     color: #3a3a3a;
-}
-
-.about-us div {
-    float: left;
-    width: 33%;
-    text-align: center;
-
-}
-
-.about-us h1 {
-    text-align: center;
     text-transform: uppercase;
     font-size: 250%;
     line-height: 75px;
 }
+.wrapper>h1>i {
+    font-size: 250%;
+    color: #fff;
+    margin-top: 30px;
+}
+.columns {
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
 
-.about-us h2 {
+.col {
+    margin: 0 15px 30px;
+    padding: 20px;
+}
+
+.col-33 {
+    width: calc(33.33% - 30px)
+}
+.col-33>i {
+    font-size: 400%;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.col-33>h2 {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 200%;
     line-height: 75px;
+    color: #3a3a3a;
 }
 
 
-.about-us p {
+.col-33>p {
     font-family: 'Roboto', sans-serif;
+    color: #3a3a3a;
     font-weight: 300;
     font-size: 150%;
     padding: 0 30px;
     margin: 0 30px;
 }
 
-.about-us h1 i {
-    font-size: 250%;
-    color: #fff;
-    margin-top: 30px;
-}
-
-.about-us i {
-    font-size: 400%;
-    color: #fff;
-    margin-top: 30px;
-}
 
 /* hamburger button media query */
 
@@ -271,4 +279,25 @@ body {
     .menu>li:not(:last-child) {
         border-bottom: 1px solid #444;
     }
+}
+
+/* about us section media queries */
+
+
+@media screen and (max-width: 1500px) {
+    .col-33 {
+        width: 100%;
+        padding: 0 50px;
+
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .col-33 {
+        width: 100%;
+        padding: 0 10px;
+
+    }
+    
 }
