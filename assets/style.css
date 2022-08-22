@@ -232,6 +232,103 @@ body {
     margin: 0 30px;
 }
 
+/* info circles */
+
+.info-wrapper {
+    padding: 30px 30px 100px;
+    width: 100%;
+    background-color: #3a3a3a;
+    font-size: 'Roboto', san-serif;
+    text-align: center;
+    background: url(images/pexels-dave-drost-3444919.jpg) no-repeat center center;
+    background-size: cover;
+}
+.info-wrapper>h1 {
+    color: #3a3a3a;
+    text-transform: uppercase;
+    font-size: 250%;
+    line-height: 75px;
+}
+.info-wrapper>h1>i {
+    font-size: 250%;
+    color: #fff;
+    margin-top: 30px;
+}
+.info-blocks {
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+
+.block {
+    margin: 0 15px 30px;
+    padding: 20px;
+    background-color: rgb(250, 200, 5, .6);
+    border-radius: 6px;
+}
+
+.block-33 {
+    width: calc(33.33% - 30px)
+}
+.block-33>i {
+    font-size: 400%;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.block-33>h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 200%;
+    line-height: 75px;
+    color: #3a3a3a;
+}
+
+.block-33>h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 150%;
+    line-height: 45px;
+    color: #3a3a3a;
+}
+
+
+.block-33>p {
+    font-family: 'Roboto', sans-serif;
+    color: #3a3a3a;
+    font-weight: 300;
+    font-size: 150%;
+    padding: 0 30px;
+    margin: 0 30px;
+}
+
+.block-100 {
+    width: calc(100% - 30px)
+}
+.block-100>h1>i {
+    font-size: 400%;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.block-100>h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 200%;
+    line-height: 75px;
+    color: #3a3a3a;
+}
+
+
+.block-100>p {
+    font-family: 'Roboto', sans-serif;
+    color: #3a3a3a;
+    font-weight: 300;
+    font-size: 150%;
+    padding: 0 30px;
+    margin: 0 30px;
+}
+
 /* footer */
 
 footer {
@@ -323,6 +420,27 @@ footer {
     .col-33 {
         width: 100%;
         padding: 0 10px;
+
+    }
+    
+}
+
+/* info-blocks section media queries */
+
+
+@media screen and (max-width: 1500px) {
+    .block-33 {
+        width: 100%;
+        padding: 0 50px 30px;
+
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .block-33 {
+        width: 100%;
+        padding: 0 10px 30px;
 
     }
     
