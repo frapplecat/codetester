@@ -59,7 +59,7 @@ body {
     color: rgb(250, 200, 5);
 }
 
-.top-nav>div>img {
+.top-nav>div>a>img {
     width: 80%;
 }
 
@@ -121,7 +121,6 @@ body {
     overflow: hidden;
     position: relative;
     background-color: black;
-    /* z-index: -1; */
 }
 
 .homepage-moon {
@@ -236,6 +235,14 @@ body {
     margin: 0 30px;
 }
 
+.col-33>p>a {
+    text-decoration: none;
+    color: #3a3a3a;
+}
+.col-33>p>a:hover {
+    color: #fff;
+}
+
 /* info blocks */
 
 .info-wrapper {
@@ -272,6 +279,12 @@ body {
     margin: 0 15px 30px;
     padding: 20px;
     background-color: rgba(43, 43, 42, 0.7);
+    border-radius: 6px;
+}
+
+.block-nb {
+    margin: 0 15px 30px;
+    padding: 20px;
     border-radius: 6px;
 }
 
@@ -328,7 +341,20 @@ body {
     line-height: 75px;
     color: rgb(250, 200, 5);
 }
+.block-100>h2 {
+    font-weight: 500;
+    font-size: 150%;
+    line-height: 35px;
+    color: #fff;
+}
 
+.block-100>h2>a {
+    text-decoration: none;
+    color: #fff;
+}
+.block-100>h2>a:hover {
+    color: rgb(250, 200, 5);
+}
 
 .block-100>p {
     font-family: 'Roboto', sans-serif;
@@ -345,11 +371,29 @@ body {
 .mw-info-wrapper {
     padding: 30px 30px 100px;
     width: 100%;
+    height: 1100px;
     background-color: #3a3a3a;
     font-size: 'Roboto', san-serif;
     text-align: center;
     background: url(../images/Nasa-Moon-Detail.jpg) no-repeat center center;
     background-size: cover;
+
+}
+.mw-info-wrapper-bkg {
+    padding: 30px 30px 100px;
+    width: 100%;
+    background-color: #3a3a3a;
+    font-size: 'Roboto', san-serif;
+    text-align: center;
+
+}
+
+.mw-info-wrapper-bky {
+    padding: 30px 30px 100px;
+    width: 100%;
+    background-color: rgb(250, 200, 5);
+    font-size: 'Roboto', san-serif;
+    text-align: center;
 
 }
 
@@ -388,6 +432,10 @@ body {
     width: calc(33.33% - 30px)
 }
 
+.mw-block-50 {
+    width: calc(50% - 30px)
+}
+
 .mw-block-33>i {
     font-size: 400%;
     color: rgb(250, 200, 5);
@@ -413,11 +461,19 @@ body {
 
 .mw-block-33>p {
     font-family: 'Roboto', sans-serif;
-    color: rgb(250, 200, 5);
+    color: #fff;
     font-weight: 300;
     font-size: 150%;
-    padding: 0 30px;
+    padding: 30px 30px 60px;
     margin: 0 30px;
+}
+.mw-block-33>p>a {
+    color: #fff;
+    text-decoration: none;
+}
+.mw-block-33>p>a:hover {
+    color: rgb(250, 200, 5);
+
 }
 
 .mw-block-100 {
@@ -594,6 +650,7 @@ footer {
     background: url(../images/pexels-pixabay-73872.jpg) no-repeat center center;
     background-size: cover;
     height: 1200px;
+    position: relative;
 }
 
 .signup-form {
@@ -601,6 +658,9 @@ footer {
     background-color: #3a3a3a95;
     max-width: 800px;
     padding: 30px;
+    position: absolute;
+    top: 200px;
+    right: 100px;
 }
 
 .signup-form>h2 {
@@ -773,6 +833,15 @@ footer {
 
 }
 
+@media screen and (max-width: 1200px) {
+    .mw-block-50 {
+        width: 100%;
+        padding: 0 10px 30px;
+
+    }
+
+}
+
 /* footer media query */
 
 @media screen and (max-width: 600px) {
@@ -823,14 +892,14 @@ footer {
 
 /* moon-shots media query */
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 800px) {
     .moon-shots {
         column-count: 2;
     }
 }
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 500px) {
     .moon-shots {
         column-count: 1;
     }
