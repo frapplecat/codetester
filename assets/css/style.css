@@ -410,6 +410,19 @@ body {
     margin-top: 30px;
 }
 
+.mw-info-wrapper-bkg>h2 {
+    color: rgb(250, 200, 5);
+    text-transform: uppercase;
+    font-size: 250%;
+    line-height: 75px;
+}
+
+.mw-info-wrapper-bkg>i {
+    font-size: 250%;
+    color: rgb(250, 200, 5);
+    margin-top: 30px;
+}
+
 .mw-info-blocks {
     display: flex;
     margin: 0 -15px;
@@ -445,9 +458,14 @@ body {
 .mw-block-33>h2 {
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 200%;
+    font-size: 150%;
     line-height: 75px;
     color: rgb(250, 200, 5);
+}
+.mw-block-33>h2>i {
+    font-size: 400%;
+    color: rgb(250, 200, 5);
+    margin-top: 30px;
 }
 
 .mw-block-33>h3 {
@@ -464,7 +482,7 @@ body {
     color: #fff;
     font-weight: 300;
     font-size: 150%;
-    padding: 30px 30px 60px;
+    padding: 0 30px 60px;
     margin: 0 30px;
 }
 .mw-block-33>p>a {
