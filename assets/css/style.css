@@ -61,6 +61,8 @@ body {
 
 .top-nav>div>a>img {
     width: 80%;
+    height: 90px;
+    padding-top: 5px;
 }
 
 .menu-button-container {
@@ -239,6 +241,7 @@ body {
     text-decoration: none;
     color: #3a3a3a;
 }
+
 .col-33>p>a:hover {
     color: #fff;
 }
@@ -341,6 +344,7 @@ body {
     line-height: 75px;
     color: rgb(250, 200, 5);
 }
+
 .block-100>h2 {
     font-weight: 500;
     font-size: 150%;
@@ -352,6 +356,7 @@ body {
     text-decoration: none;
     color: #fff;
 }
+
 .block-100>h2>a:hover {
     color: rgb(250, 200, 5);
 }
@@ -379,6 +384,7 @@ body {
     background-size: cover;
 
 }
+
 .mw-info-wrapper-bkg {
     padding: 30px 30px 100px;
     width: 100%;
@@ -462,6 +468,7 @@ body {
     line-height: 75px;
     color: rgb(250, 200, 5);
 }
+
 .mw-block-33>h2>i {
     font-size: 400%;
     color: rgb(250, 200, 5);
@@ -485,10 +492,12 @@ body {
     padding: 0 30px 60px;
     margin: 0 30px;
 }
+
 .mw-block-33>p>a {
     color: #fff;
     text-decoration: none;
 }
+
 .mw-block-33>p>a:hover {
     color: rgb(250, 200, 5);
 
@@ -549,6 +558,7 @@ td {
     column-gap: 0;
     background-color: black;
 }
+
 .moon-shots>img {
     width: 100%;
 }
@@ -583,83 +593,40 @@ footer {
 
 /* contact us window */
 
-.contact-us {
-    background: url(../images/pexels-pineapplelove287005.jpg) no-repeat center center;
+.contactus {
+    background: url(../images/pexels-chuck-johnson-6369354.jpg) no-repeat center center;
     width: 100%;
     height: 100vh;
     background-position: cover;
     font-family: 'Roboto', sans-serif;
 }
 
-.cu-wrapper {
-    font-family: 'Roboto', sans-serif;
-    max-width: 720px;
+.send-button {
+    margin-top: 20px;
+    border-radius: 2px;
     width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px 20px;
-    box-shadow: -4px -4px 11px rgb(250, 200, 5),
-        4px 4px 9px rgb(250, 200, 5)
-}
-
-.cu-wrapper h2 {
-    color: rgb(250, 200, 5);
+    padding: 15px;
     text-align: center;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-.cu-wrapper .form .form_container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.cu-wrapper .form .form_container .form_left,
-.cu-wrapper .form .form_container .form_right {
-    width: 48%;
-}
-
-.cu-wrapper .form .input_field input[type="text"],
-.cu-wrapper .form textarea {
-    width: 100%;
-    padding: 14px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    border: 1.5px solid rgb(250, 200, 5);
-    border-radius: 3px;
-    background: rgba(250, 200, 5, 0.25);
-}
-
-.cu-wrapper .form textarea {
-    height: 90%;
-    resize: none;
-}
-
-.cu-wrapper .form .btn {
-    width: 200px;
-    background: rgba(255, 255, 255, 0.164);
-    backdrop-filter: blur(10px);
-    margin: 0 auto;
-    padding: 13px;
-    font-size: 18px;
-    border-radius: 4px;
-    letter-spacing: 3px;
-    text-align: center;
-}
-
-.cu-wrapper .form .btn a {
+    font-size: 100%;
+    border: 2px solid white;
     color: #fff;
-    text-decoration: none;
+    display: block;
+    background: transparent;
 }
 
-.cu-wrapper .form .btn a:hover {
-    color: rgb(250, 200, 5)
+.send-button:hover {
+    background-color: rgb(250, 200, 5);
+    color: black;
+}
+
+.contactus-message {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 100%;
+    text-align: center;
 }
 
 /* sign-up section */
@@ -729,7 +696,7 @@ footer {
 
 .myfile {
     margin-top: 8px;
-    padding: 12px 35%;
+    padding: 12px 36%;
     border-radius: 2px;
     width: 100%;
     text-align: center;
@@ -796,6 +763,37 @@ footer {
     }
 }
 
+
+/* circle heading queries */
+
+@media screen and (max-width: 600px) {
+    .homepage-moon-circle {
+        font-size: 250%;
+        width: 450px;
+        height: 450px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .homepage-moon-circle {
+        font-size: 225%;
+        width: 400px;
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .homepage-moon-circle {
+        font-size: 200%;
+        width: 350px;
+        height: 350px;
+    }
+
+}
+
+
 /* about us section media queries */
 
 
@@ -808,13 +806,35 @@ footer {
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
     .col-33 {
         width: 100%;
         padding: 0 10px;
 
     }
 
+}
+
+@media screen and (max-width: 600px) {
+
+.col-33 {
+    width: 100%;
+    padding: 0 10px;
+}
+
+    .col-33>p{
+        width: 100%;
+        padding: 0 5px 0;
+        font-size: 130%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+
+.block-100>h2 {
+    font-size: 100%;
+    line-height: 35px;
+}
 }
 
 /* info-blocks section media queries */
@@ -853,11 +873,35 @@ footer {
 @media screen and (max-width: 700px) {
     .mw-block-33 {
         width: 100%;
-        padding: 0 10px 30px;
+        padding: 0 1px 30px;
 
     }
 
 }
+
+@media screen and (max-width: 600px) {
+    .mw-block-33>p {
+        width: 100%;
+        padding: 0 5px 30px;
+        font-size: 130%;
+        text-align: center;
+        margin-left: 0;
+
+    }
+
+    .block-100>h2 {
+        width: 100%;
+        padding: 0 5px 30px;
+        font-size: 130%;
+        text-align: center;
+        margin-left: 0;
+
+    }
+
+
+
+}
+
 
 @media screen and (max-width: 1200px) {
     .mw-block-50 {
@@ -897,23 +941,6 @@ footer {
         color: rgb(250, 200, 5);
     }
 
-}
-
-/* contact us media query */
-
-@media screen and (max-width: 460px) {
-    .cu-wrapper .form .form_container {
-        flex-direction: column;
-    }
-
-    .cu-wrapper .form .form_container .form_left,
-    .cu-wrapper .form .form_container .form_right {
-        width: 100%;
-    }
-
-    .cu-wrapper .form textarea {
-        height: 100px;
-    }
 }
 
 /* moon-shots media query */
