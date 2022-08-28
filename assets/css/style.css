@@ -674,6 +674,7 @@ footer {
 .signup-form {
     color: #fff;
     background-color: #3a3a3a95;
+    border-radius: 6px;
     text-align: center;
     max-width: 800px;
     padding: 30px;
@@ -682,6 +683,11 @@ footer {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+}
+
+.signup-form>i {
+    color: #fafafa;
+    font-size: 300%;
 }
 
 .signup-form>h2 {
@@ -695,7 +701,7 @@ footer {
     width: 100%;
     height: 25px;
     margin: 5px 0 20px;
-    border: 1px solid #fafafa;
+    border: 2px solid #fafafa;
     border-radius: 2px;
 }
 
@@ -710,10 +716,10 @@ footer {
     padding: 15px;
     text-align: center;
     font-size: 100%;
-    border: 1px solid white;
-    background-color: #3a3a3a;
+    border: 2px solid white;
     color: #fff;
     display: block;
+    background: transparent;
 }
 
 .join-button:hover {
@@ -723,13 +729,12 @@ footer {
 
 .myfile {
     margin-top: 8px;
-    padding: 12px;
+    padding: 12px 35%;
     border-radius: 2px;
     width: 100%;
     text-align: center;
     font-size: 100%;
-    border: 1px solid white;
-    background-color: #3a3a3a;
+    border: 2px solid white;
     color: #fff;
     display: block;
 }
