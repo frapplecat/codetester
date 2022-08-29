@@ -344,7 +344,9 @@ body {
     line-height: 75px;
     color: rgb(250, 200, 5);
 }
-
+.block-100>img {
+    width: 60%;
+}
 .block-100>h2 {
     font-weight: 500;
     font-size: 150%;
@@ -627,6 +629,7 @@ footer {
     color: #fff;
     font-size: 100%;
     text-align: center;
+    width: 740px;
 }
 
 /* sign-up section */
@@ -835,8 +838,15 @@ footer {
     font-size: 100%;
     line-height: 35px;
 }
+
 }
 
+@media screen and (max-width: 400px) {
+
+    .col-33>h2 {
+    font-size: 150%;
+  }
+}
 /* info-blocks section media queries */
 
 
